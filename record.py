@@ -174,13 +174,15 @@ class TwitchRecorder:
                             filename_path = os.path.join(self.processed_path, filename)
                             subprocess.call([self.ffmpeg_path, '-err_detect', 'ignore_err', '-i', recorded_filename, '-c', 'copy', filename_path])
                             os.remove(recorded_filename)
+                            '''
                             uploadname = filename
                             if (logins[i] == "ukoethe"):
                                 uploadlocation = "Uni/Info/Alda"
                             if (logins[i] == "arturandrzejak"):
                                 uploadlocation = "Uni/Info/Betriebssys - Net"
                             subprocess.call([self.upload_path, filename_path, uploadlocation, uploadname])
-                            break
+                            '''
+                            continue
                         else: # No process is done, wait a bit and check again.
                             time.sleep(5)
                             continue

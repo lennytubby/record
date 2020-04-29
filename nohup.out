@@ -1,0 +1,38 @@
+python3: can't open file 'record': [Errno 2] No such file or directory
+python3: can't open file './record': [Errno 2] No such file or directory
+python3: can't open file './record': [Errno 2] No such file or directory
+ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mpegts, from '/root/projects/record/recorded/lennytubby/arturandrzejak - 2020-04-29 09h22m31s.mp4':
+  Duration: 00:04:44.00, start: 470.100000, bitrate: 2228 kb/s
+  Program 1 
+    Stream #0:0[0x100]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 148 kb/s
+    Stream #0:1[0x101]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(progressive), 928x522, 20 fps, 20 tbr, 90k tbn, 40 tbc
+    Stream #0:2[0x102]: Data: timed_id3 (ID3  / 0x20334449)
+Output #0, mp4, to '/root/projects/record/processed/lennytubby/arturandrzejak - 2020-04-29 09h22m31s.mp4':
+  Metadata:
+    encoder         : Lavf57.83.100
+    Stream #0:0: Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 928x522, q=2-31, 20 fps, 20 tbr, 90k tbn, 90k tbc
+    Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 148 kb/s
+Stream mapping:
+  Stream #0:1 -> #0:0 (copy)
+  Stream #0:0 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame= 2148 fps=0.0 q=-1.0 size=   27904kB time=00:01:47.36 bitrate=2129.1kbits/s speed= 213x    frame= 4157 fps=4126 q=-1.0 size=   54016kB time=00:03:27.81 bitrate=2129.3kbits/s speed= 206x    frame= 5680 fps=3894 q=-1.0 Lsize=   74000kB time=00:04:43.99 bitrate=2134.6kbits/s speed= 195x    
+video:69374kB audio:4521kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.142754%
+[cli][info] streamlink is running as root! Be careful!
+[cli][info] Found matching plugin twitch for URL twitch.tv/arturandrzejak
+[plugin.twitch][info] Attempting to authenticate using OAuth token
+[plugin.twitch][info] Successfully logged in as lennytubby
+[cli][info] Available streams: audio_only, 160p (worst), 360p, 480p, 522p (best)
+[cli][info] Opening stream: 522p (hls)
