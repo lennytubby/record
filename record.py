@@ -157,7 +157,7 @@ class TwitchRecorder:
             '''
                 processes = []
                 for login in logins:
-                    filename = login + " - " + datetime.datetime.now().strftime("%Y-%m-%d %Hh%Mm%Ss") + ".mp4"
+                    filename = login + "_" + datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mm%Ss") + ".mp4"
 
                     # clean filename from unecessary characters
                     filename = "".join(x for x in filename if x.isalnum() or x in [" ", "-", "_", "."])
@@ -166,7 +166,8 @@ class TwitchRecorder:
                     processes.append(subprocess.Popen(["streamlink", "--twitch-oauth-token", self.oauth_token, "twitch.tv/" + login, self.quality, "-o", recorded_filename]))
 
                 while processes:
-                    for i in range(len(processes)):
+                    i = 0
+                    while i < len(processes):
                         process = processes[i]
                         retcode = process.poll()
                         if retcode is not None: # Process finished.
@@ -184,6 +185,7 @@ class TwitchRecorder:
                             '''
                             continue
                         else: # No process is done, wait a bit and check again.
+                            i+=1
                             time.sleep(5)
                             continue
 
