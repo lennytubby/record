@@ -1,0 +1,12 @@
+streamlink
+requests
+os
+time
+json
+sys
+subprocess
+datetime
+getopt
+request
+pillow
+onedrivesdk

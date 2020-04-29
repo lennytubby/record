@@ -1,0 +1,8 @@
+#! /bin/bash 	
+apt-get install software-properties-common -y # add-apt is nicht im common ubuntu image, aber da wir python holen ... kp
+add-apt-repository ppa:nilarimogard/webupd8 -y
+apt-get update
+apt-get install streamlink -y
+apt-get install ffmpeg -y
+
+

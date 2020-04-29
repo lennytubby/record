@@ -1,0 +1,2 @@
+requests
+https://github.com/OneDrive/onedrive-sdk-python/archive/master.zip
