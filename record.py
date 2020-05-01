@@ -118,9 +118,12 @@ class TwitchRecorder:
         return status, logins
 
     def loopcheck(self):
+        processes = []
+        processes_channels = set()
         while True:
             
             status, logins = self.check_user()
+            diff_channels = set(logins) - processes_channels
             if status == 2:
                 print("Username not found. Invalid username or typo.")
                 time.sleep(self.refresh)
@@ -130,70 +133,40 @@ class TwitchRecorder:
             elif status == 1:
                 print(self.username, "currently offline, checking again in", self.refresh, "seconds.")
                 time.sleep(self.refresh)
-            elif status == 0:
+            elif (status == 0 and diff_channels):
 
                 print(self.username, "online. Stream recording in session.")
-                print("steaming channels: " + str(logins).strip('[]'))
-                '''
+                print("steaming channels: " + str(diff_channels).strip('[]'))
                 
-                # start streamlink process
-                subprocess.call(["streamlink", "--twitch-oauth-token", self.oauth_token, "twitch.tv/" + self.username, self.quality, "-o", recorded_filename])
-
-                print("Recording stream is done. Fixing video file.")
-                if(os.path.exists(recorded_filename) is True):
-                    try:
-                        filename_path = os.path.join(self.processed_path, filename)
-                        subprocess.call([self.ffmpeg_path, '-err_detect', 'ignore_err', '-i', recorded_filename, '-c', 'copy', filename_path])
-                        os.remove(recorded_filename)
-                        uploadname = filename + datetime.date.today()
-                        if ((info['stream']).get("channel") == "some"):
-                            uploadlocation = "Uni/Info/Alda"
-                        subprocess.call([self.upload_path, filename_path, uploadlocation, uploadname])
-                    except Exception as e:
-                        print(e)
-                else:
-                    print("Skip fixing. File not found.")
-                    
-                print("Fixing is done. Going back to checking..")
-            '''
-                processes = []
-                for login in logins:
+                for login in diff_channels:
                     filename = login + "_" + datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mm%Ss") + ".mp4"
 
                     # clean filename from unecessary characters
                     filename = "".join(x for x in filename if x.isalnum() or x in [" ", "-", "_", "."])
                     
                     recorded_filename = os.path.join(self.recorded_path, filename)
-                    processes.append(subprocess.Popen(["streamlink", "--twitch-oauth-token", self.oauth_token, "twitch.tv/" + login, self.quality, "-o", recorded_filename]))
+                    processes.append([
+                        subprocess.Popen(["streamlink", "--twitch-oauth-token", self.oauth_token, "twitch.tv/" + login, self.quality, "-o", recorded_filename]),
+                        login
+                    ])
+                    processes_channels.add(login)
+                    print("Recording channel: "+login)
+                    time.sleep(self.refresh)
 
-                while processes:
-                    i = 0
-                    while i < len(processes):
-                        process = processes[i]
-                        retcode = process.poll()
-                        if retcode is not None: # Process finished.
-                            processes.remove(process)
-                            filename_path = os.path.join(self.processed_path, filename)
-                            subprocess.call([self.ffmpeg_path, '-err_detect', 'ignore_err', '-i', recorded_filename, '-c', 'copy', filename_path])
-                            os.remove(recorded_filename)
-                            print("Done, Video processed, " + datetime.datetime.now().strftime("%Y-%m-%d"))
-                            '''
-                            uploadname = filename
-                            if (logins[i] == "ukoethe"):
-                                uploadlocation = "Uni/Info/Alda"
-                            if (logins[i] == "arturandrzejak"):
-                                uploadlocation = "Uni/Info/Betriebssys - Net"
-                            subprocess.call([self.upload_path, filename_path, uploadlocation, uploadname])
-                            '''
-                            continue
-                        else: # No process is done, wait a bit and check again.
-                            i+=1
-                            time.sleep(5)
-                            continue
-
-
-                print("going back to Checking")
-                time.sleep(self.refresh)
+            if processes:
+                i = 0
+                while i < len(processes):
+                    process = processes[i,0]
+                    login = processes[i,1]
+                    retcode = process.poll()
+                    if retcode is not None: # Process finished.
+                        processes.remove([process,login])
+                        filename_path = os.path.join(self.processed_path, filename)
+                        subprocess.call([self.ffmpeg_path, '-err_detect', 'ignore_err', '-i', recorded_filename, '-c', 'copy', filename_path])
+                        os.remove(recorded_filename)
+                        print("Done, Video processed, " + datetime.datetime.now().strftime("%Y-%m-%d"))
+                    else: # No process is done, wait a bit and check again.
+                        i+=1
 
 def main(argv):
     twitch_recorder = TwitchRecorder()
