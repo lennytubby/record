@@ -29,8 +29,8 @@ class TwitchRecorder:
         self.username = "lennytubby"
         self.twitchid = "109929194"
         self.subtoken = "zzh7207rnaqwj4c9ubvrtbkkenviw7"
-        self.quality = "best"
-        self.channels = ["ukoethe","arturandrzejak"]
+        self.quality = "worst"
+        self.channels = ["ukoethe","arturandrzejak","maxim","solaaaa"]
 
     def run(self):
         # path to recorded stream
@@ -133,6 +133,7 @@ class TwitchRecorder:
             elif status == 0:
 
                 print(self.username, "online. Stream recording in session.")
+                print("steaming channels: " + str(logins).strip('[]'))
                 '''
                 
                 # start streamlink process
@@ -175,6 +176,7 @@ class TwitchRecorder:
                             filename_path = os.path.join(self.processed_path, filename)
                             subprocess.call([self.ffmpeg_path, '-err_detect', 'ignore_err', '-i', recorded_filename, '-c', 'copy', filename_path])
                             os.remove(recorded_filename)
+                            print("Done, Video processed, " + datetime.datetime.now().strftime("%Y-%m-%d"))
                             '''
                             uploadname = filename
                             if (logins[i] == "ukoethe"):
@@ -190,6 +192,7 @@ class TwitchRecorder:
                             continue
 
 
+                print("going back to Checking")
                 time.sleep(self.refresh)
 
 def main(argv):

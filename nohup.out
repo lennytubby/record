@@ -1,89 +1,0 @@
-python3: can't open file 'record': [Errno 2] No such file or directory
-python3: can't open file './record': [Errno 2] No such file or directory
-python3: can't open file './record': [Errno 2] No such file or directory
-ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
-  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
-  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
-  libavutil      55. 78.100 / 55. 78.100
-  libavcodec     57.107.100 / 57.107.100
-  libavformat    57. 83.100 / 57. 83.100
-  libavdevice    57. 10.100 / 57. 10.100
-  libavfilter     6.107.100 /  6.107.100
-  libavresample   3.  7.  0 /  3.  7.  0
-  libswscale      4.  8.100 /  4.  8.100
-  libswresample   2.  9.100 /  2.  9.100
-  libpostproc    54.  7.100 / 54.  7.100
-Input #0, mpegts, from '/root/projects/record/recorded/lennytubby/arturandrzejak - 2020-04-29 09h22m31s.mp4':
-  Duration: 00:04:44.00, start: 470.100000, bitrate: 2228 kb/s
-  Program 1 
-    Stream #0:0[0x100]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 148 kb/s
-    Stream #0:1[0x101]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(progressive), 928x522, 20 fps, 20 tbr, 90k tbn, 40 tbc
-    Stream #0:2[0x102]: Data: timed_id3 (ID3  / 0x20334449)
-Output #0, mp4, to '/root/projects/record/processed/lennytubby/arturandrzejak - 2020-04-29 09h22m31s.mp4':
-  Metadata:
-    encoder         : Lavf57.83.100
-    Stream #0:0: Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 928x522, q=2-31, 20 fps, 20 tbr, 90k tbn, 90k tbc
-    Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 148 kb/s
-Stream mapping:
-  Stream #0:1 -> #0:0 (copy)
-  Stream #0:0 -> #0:1 (copy)
-Press [q] to stop, [?] for help
-frame= 2148 fps=0.0 q=-1.0 size=   27904kB time=00:01:47.36 bitrate=2129.1kbits/s speed= 213x    frame= 4157 fps=4126 q=-1.0 size=   54016kB time=00:03:27.81 bitrate=2129.3kbits/s speed= 206x    frame= 5680 fps=3894 q=-1.0 Lsize=   74000kB time=00:04:43.99 bitrate=2134.6kbits/s speed= 195x    
-video:69374kB audio:4521kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.142754%
-[cli][info] streamlink is running as root! Be careful!
-[cli][info] Found matching plugin twitch for URL twitch.tv/arturandrzejak
-[plugin.twitch][info] Attempting to authenticate using OAuth token
-[plugin.twitch][info] Successfully logged in as lennytubby
-[cli][info] Available streams: audio_only, 160p (worst), 360p, 480p, 522p (best)
-[cli][info] Opening stream: 522p (hls)
-[cli][info] Stream ended
-[cli][info] Closing currently open stream...
-ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
-  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
-  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
-  libavutil      55. 78.100 / 55. 78.100
-  libavcodec     57.107.100 / 57.107.100
-  libavformat    57. 83.100 / 57. 83.100
-  libavdevice    57. 10.100 / 57. 10.100
-  libavfilter     6.107.100 /  6.107.100
-  libavresample   3.  7.  0 /  3.  7.  0
-  libswscale      4.  8.100 /  4.  8.100
-  libswresample   2.  9.100 /  2.  9.100
-  libpostproc    54.  7.100 / 54.  7.100
-Input #0, mpegts, from '/root/projects/record/recorded/lennytubby/arturandrzejak - 2020-04-29 09h40m08s.mp4':
-  Duration: 01:22:47.56, start: 1524.100000, bitrate: 2228 kb/s
-  Program 1 
-    Stream #0:0[0x100]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 123 kb/s
-    Stream #0:1[0x101]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(progressive), 928x522, 20 fps, 20 tbr, 90k tbn, 40 tbc
-    Stream #0:2[0x102]: Data: timed_id3 (ID3  / 0x20334449)
-Output #0, mp4, to '/root/projects/record/processed/lennytubby/arturandrzejak - 2020-04-29 09h40m08s.mp4':
-  Metadata:
-    encoder         : Lavf57.83.100
-    Stream #0:0: Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 928x522, q=2-31, 20 fps, 20 tbr, 90k tbn, 90k tbc
-    Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 123 kb/s
-Stream mapping:
-  Stream #0:1 -> #0:0 (copy)
-  Stream #0:0 -> #0:1 (copy)
-Press [q] to stop, [?] for help
-frame= 1242 fps=0.0 q=-1.0 size=   16128kB time=00:01:02.03 bitrate=2129.7kbits/s speed= 124x    frame= 2361 fps=2354 q=-1.0 size=   30720kB time=00:01:58.04 bitrate=2131.9kbits/s speed= 118x    frame= 3440 fps=2288 q=-1.0 size=   44544kB time=00:02:52.00 bitrate=2121.4kbits/s speed= 114x    frame= 4551 fps=2268 q=-1.0 size=   59136kB time=00:03:47.50 bitrate=2129.4kbits/s speed= 113x    frame= 5674 fps=2262 q=-1.0 size=   73728kB time=00:04:43.67 bitrate=2129.1kbits/s speed= 113x    frame= 6757 fps=2244 q=-1.0 size=   87808kB time=00:05:37.82 bitrate=2129.3kbits/s speed= 112x    frame= 7978 fps=2271 q=-1.0 size=  103680kB time=00:06:38.86 bitrate=2129.4kbits/s speed= 114x    frame= 9216 fps=2295 q=-1.0 size=  119552kB time=00:07:40.77 bitrate=2125.5kbits/s speed= 115x    frame=10145 fps=2237 q=-1.0 size=  131840kB time=00:08:27.21 bitrate=2129.4kbits/s speed= 112x    frame=10829 fps=2151 q=-1.0 size=  140544kB time=00:09:01.41 bitrate=2126.5kbits/s speed= 108x    frame=11920 fps=2153 q=-1.0 size=  154880kB time=00:09:56.00 bitrate=2128.8kbits/s speed= 108x    frame=13021 fps=2157 q=-1.0 size=  169216kB time=00:10:51.01 bitrate=2129.3kbits/s speed= 108x    frame=14321 fps=2190 q=-1.0 size=  186112kB time=00:11:56.02 bitrate=2129.3kbits/s speed= 110x    frame=15975 fps=2269 q=-1.0 size=  207616kB time=00:13:18.71 bitrate=2129.4kbits/s speed= 113x    frame=17433 fps=2310 q=-1.0 size=  226560kB time=00:14:31.60 bitrate=2129.4kbits/s speed= 116x    frame=18161 fps=2257 q=-1.0 size=  236032kB time=00:15:08.03 bitrate=2129.4kbits/s speed= 113x    frame=19423 fps=2272 q=-1.0 size=  252416kB time=00:16:11.12 bitrate=2129.3kbits/s speed= 114x    frame=20664 fps=2283 q=-1.0 size=  268544kB time=00:17:13.18 bitrate=2129.2kbits/s speed= 114x    frame=21901 fps=2293 q=-1.0 size=  284416kB time=00:18:15.02 bitrate=2127.7kbits/s speed= 115x    frame=23086 fps=2296 q=-1.0 size=  300032kB time=00:19:14.25 bitrate=2129.4kbits/s speed= 115x    frame=24229 fps=2295 q=-1.0 size=  314880kB time=00:20:11.40 bitrate=2129.3kbits/s speed= 115x    frame=25482 fps=2304 q=-1.0 size=  331008kB time=00:21:14.07 bitrate=2128.3kbits/s speed= 115x    frame=26553 fps=2297 q=-1.0 size=  345088kB time=00:22:07.61 bitrate=2129.3kbits/s speed= 115x    frame=27600 fps=2288 q=-1.0 size=  358656kB time=00:23:00.00 bitrate=2129.1kbits/s speed= 114x    frame=29074 fps=2315 q=-1.0 size=  377856kB time=00:24:13.65 bitrate=2129.4kbits/s speed= 116x    frame=30552 fps=2339 q=-1.0 size=  397056kB time=00:25:27.56 bitrate=2129.3kbits/s speed= 117x    frame=32088 fps=2366 q=-1.0 size=  417024kB time=00:26:44.35 bitrate=2129.4kbits/s speed= 118x    frame=33461 fps=2343 q=-1.0 size=  434688kB time=00:27:53.03 bitrate=2128.4kbits/s speed= 117x    frame=34866 fps=2358 q=-1.0 size=  453120kB time=00:29:03.25 bitrate=2129.3kbits/s speed= 118x    frame=36303 fps=2375 q=-1.0 size=  471808kB time=00:30:15.12 bitrate=2129.4kbits/s speed= 119x    frame=37752 fps=2391 q=-1.0 size=  490496kB time=00:31:27.59 bitrate=2128.7kbits/s speed= 120x    frame=39018 fps=2395 q=-1.0 size=  506880kB time=00:32:30.88 bitrate=2128.4kbits/s speed= 120x    frame=40360 fps=2404 q=-1.0 size=  524288kB time=00:33:38.01 bitrate=2128.3kbits/s speed= 120x    frame=41561 fps=2402 q=-1.0 size=  540160kB time=00:34:38.01 bitrate=2129.4kbits/s speed= 120x    frame=42544 fps=2390 q=-1.0 size=  552704kB time=00:35:27.17 bitrate=2128.5kbits/s speed= 119x    frame=43663 fps=2385 q=-1.0 size=  567296kB time=00:36:23.13 bitrate=2128.7kbits/s speed= 119x    frame=44201 fps=2350 q=-1.0 size=  574464kB time=00:36:50.02 bitrate=2129.4kbits/s speed= 117x    frame=45943 fps=2379 q=-1.0 size=  596992kB time=00:38:17.12 bitrate=2129.0kbits/s speed= 119x    frame=46991 fps=2368 q=-1.0 size=  610560kB time=00:39:09.52 bitrate=2128.8kbits/s speed= 118x    frame=47708 fps=2345 q=-1.0 size=  620032kB time=00:39:45.35 bitrate=2129.4kbits/s speed= 117x    frame=49122 fps=2356 q=-1.0 size=  638464kB time=00:40:56.06 bitrate=2129.5kbits/s speed= 118x    frame=50665 fps=2373 q=-1.0 size=  658432kB time=00:42:13.22 bitrate=2129.3kbits/s speed= 119x    frame=52175 fps=2388 q=-1.0 size=  677888kB time=00:43:28.73 bitrate=2128.7kbits/s speed= 119x    frame=53201 fps=2380 q=-1.0 size=  691456kB time=00:44:20.02 bitrate=2129.5kbits/s speed= 119x    frame=54744 fps=2395 q=-1.0 size=  711424kB time=00:45:37.18 bitrate=2129.2kbits/s speed= 120x    frame=56391 fps=2414 q=-1.0 size=  732672kB time=00:46:59.52 bitrate=2128.7kbits/s speed= 121x    frame=56937 fps=2381 q=-1.0 size=  739840kB time=00:47:26.83 bitrate=2129.0kbits/s speed= 119x    frame=57917 fps=2370 q=-1.0 size=  752640kB time=00:48:15.82 bitrate=2129.1kbits/s speed= 118x    frame=59400 fps=2382 q=-1.0 size=  771840kB time=00:49:30.01 bitrate=2128.9kbits/s speed= 119x    frame=61115 fps=2402 q=-1.0 size=  794112kB time=00:50:55.74 bitrate=2128.9kbits/s speed= 120x    frame=63170 fps=2435 q=-1.0 size=  820992kB time=00:52:38.46 bitrate=2129.4kbits/s speed= 122x    frame=64510 fps=2439 q=-1.0 size=  838400kB time=00:53:45.47 bitrate=2129.4kbits/s speed= 122x    frame=64966 fps=2411 q=-1.0 size=  844288kB time=00:54:08.25 bitrate=2129.3kbits/s speed= 121x    frame=66933 fps=2439 q=-1.0 size=  869888kB time=00:55:46.61 bitrate=2129.4kbits/s speed= 122x    frame=68863 fps=2464 q=-1.0 size=  894976kB time=00:57:23.11 bitrate=2129.4kbits/s speed= 123x    frame=70822 fps=2489 q=-1.0 size=  920320kB time=00:59:01.06 bitrate=2129.1kbits/s speed= 124x    frame=72687 fps=2511 q=-1.0 size=  944640kB time=01:00:34.33 bitrate=2129.3kbits/s speed= 126x    frame=74556 fps=2532 q=-1.0 size=  968960kB time=01:02:07.77 bitrate=2129.3kbits/s speed= 127x    frame=76585 fps=2557 q=-1.0 size=  995328kB time=01:03:49.21 bitrate=2129.3kbits/s speed= 128x    frame=78596 fps=2581 q=-1.0 size= 1021440kB time=01:05:29.78 bitrate=2129.3kbits/s speed= 129x    frame=79434 fps=2565 q=-1.0 size= 1032192kB time=01:06:11.67 bitrate=2129.0kbits/s speed= 128x    frame=79589 fps=2517 q=-1.0 size= 1034240kB time=01:06:19.42 bitrate=2129.1kbits/s speed= 126x    frame=79771 fps=2378 q=-1.0 size= 1036544kB time=01:06:28.53 bitrate=2128.9kbits/s speed= 119x    frame=79920 fps=2348 q=-1.0 size= 1038592kB time=01:06:36.00 bitrate=2129.2kbits/s speed= 117x    frame=80222 fps=2322 q=-1.0 size= 1042432kB time=01:06:51.07 bitrate=2129.0kbits/s speed= 116x    frame=81017 fps=2311 q=-1.0 size= 1052928kB time=01:07:30.80 bitrate=2129.3kbits/s speed= 116x    frame=82340 fps=2316 q=-1.0 size= 1070080kB time=01:08:36.96 bitrate=2129.3kbits/s speed= 116x    frame=84164 fps=2335 q=-1.0 size= 1093632kB time=01:10:08.19 bitrate=2129.0kbits/s speed= 117x    frame=86000 fps=2353 q=-1.0 size= 1117696kB time=01:11:40.00 bitrate=2129.3kbits/s speed= 118x    frame=87250 fps=2355 q=-1.0 size= 1133824kB time=01:12:42.46 bitrate=2129.1kbits/s speed= 118x    frame=88974 fps=2369 q=-1.0 size= 1156352kB time=01:14:08.65 bitrate=2129.4kbits/s speed= 118x    frame=90673 fps=2383 q=-1.0 size= 1178368kB time=01:15:33.64 bitrate=2129.2kbits/s speed= 119x    frame=92047 fps=2387 q=-1.0 size= 1196288kB time=01:16:42.30 bitrate=2129.4kbits/s speed= 119x    frame=94011 fps=2407 q=-1.0 size= 1221632kB time=01:18:20.52 bitrate=2129.0kbits/s speed= 120x    frame=95849 fps=2423 q=-1.0 size= 1245696kB time=01:19:52.40 bitrate=2129.4kbits/s speed= 121x    frame=97681 fps=2438 q=-1.0 size= 1269504kB time=01:21:24.03 bitrate=2129.3kbits/s speed= 122x    frame=99334 fps=2452 q=-1.0 Lsize= 1294144kB time=01:22:47.57 bitrate=2134.2kbits/s speed= 123x    
-video:1213241kB audio:79081kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.141021%
-Fixing previously recorded files.
-Fixing /root/projects/record/recorded/lennytubby/arturandrzejak - 2020-04-29 09h22m31s.mp4.
-Checking for lennytubby every 30.0 seconds. Record with best quality.
-lennytubby online. Stream recording in session.
-Traceback (most recent call last):
-  File "./record.py", line 212, in <module>
-    
-  File "./record.py", line 209, in main
-    twitch_recorder.quality = arg
-  File "./record.py", line 71, in run
-    self.loopcheck()
-  File "./record.py", line 182, in loopcheck
-    uploadlocation = "Uni/Info/Betriebssys - Net"
-  File "/usr/lib/python3.6/subprocess.py", line 287, in call
-    with Popen(*popenargs, **kwargs) as p:
-  File "/usr/lib/python3.6/subprocess.py", line 729, in __init__
-    restore_signals, start_new_session)
-  File "/usr/lib/python3.6/subprocess.py", line 1364, in _execute_child
-    raise child_exception_type(errno_num, err_msg, err_filename)
-FileNotFoundError: [Errno 2] No such file or directory: '/root/projects/record/onedriveupload': '/root/projects/record/onedriveupload'
