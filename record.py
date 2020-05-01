@@ -102,11 +102,11 @@ class TwitchRecorder:
             r = requests.get(url2, headers = {"Client-ID" : self.client_id}, timeout = 15)
             r.raise_for_status()
             info = r.json()
+            logins = []
             if len(info['data']) == 0:
                 status = 1
             else:
                 status = 0
-                logins = []
                 for obj in info['data']:
                     logins.append(obj["user_name"])
                 return status, logins
@@ -136,7 +136,7 @@ class TwitchRecorder:
             elif (status == 0 and diff_channels):
 
                 print(self.username, "online. Stream recording in session.")
-                print("steaming channels: " + str(diff_channels).strip('[]'))
+                print("steaming channels: " + str(diff_channels).strip('{}'))
                 
                 for login in diff_channels:
                     filename = login + "_" + datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mm%Ss") + ".mp4"
@@ -156,8 +156,8 @@ class TwitchRecorder:
             if processes:
                 i = 0
                 while i < len(processes):
-                    process = processes[i,0]
-                    login = processes[i,1]
+                    process = processes[i][0]
+                    login = processes[i][1]
                     retcode = process.poll()
                     if retcode is not None: # Process finished.
                         processes.remove([process,login])
