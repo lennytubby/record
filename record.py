@@ -99,10 +99,10 @@ class TwitchRecorder:
         for i in range(len(self.channels)-1):
             url2 = url2 + "&user_login=" + self.channels[i+1]
         try:
+            logins = []
             r = requests.get(url2, headers = {"Client-ID" : self.client_id}, timeout = 15)
             r.raise_for_status()
             info = r.json()
-            logins = []
             if len(info['data']) == 0:
                 status = 1
             else:
@@ -114,6 +114,8 @@ class TwitchRecorder:
             if e.response:
                 if e.response.reason == 'Not Found' or e.response.reason == 'Unprocessable Entity':
                     status = 2
+                else: status = 3
+            else: status = 3
 
         return status, logins
 
@@ -131,7 +133,7 @@ class TwitchRecorder:
                 print(datetime.datetime.now().strftime("%Hh%Mm%Ss")," ","unexpected error. will try again in 5 minutes.")
                 time.sleep(300)
             elif status == 1:
-                print(self.username, "currently offline, checking again in", self.refresh, "seconds.")
+                #print(self.username, "currently offline, checking again in", self.refresh, "seconds.")
                 time.sleep(self.refresh)
             elif (status == 0 and diff_channels):
 
