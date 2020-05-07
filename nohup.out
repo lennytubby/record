@@ -1,14 +1,11 @@
-./record.py: 5: ./record.py: import: not found
-./record.py: 6: ./record.py: import: not found
-./record.py: 7: ./record.py: import: not found
-./record.py: 8: ./record.py: import: not found
-./record.py: 9: ./record.py: import: not found
-./record.py: 10: ./record.py: import: not found
-./record.py: 11: ./record.py: import: not found
-./record.py: 12: ./record.py: import: not found
-./record.py: 13: ./record.py: import: not found
-./record.py: 17: ./record.py: class: not found
-./record.py: 18: ./record.py: Syntax error: "(" unexpected
+[cli][info] streamlink is running as root! Be careful!
+[cli][info] Found matching plugin twitch for URL twitch.tv/maxim
+[plugin.twitch][info] Attempting to authenticate using OAuth token
+[plugin.twitch][info] Successfully logged in as lennytubby
+[cli][info] Available streams: audio_only, 160p (worst), 360p, 480p, 720p, 720p60, 1080p60 (best)
+[cli][info] Opening stream: 160p (hls)
+[cli][info] Stream ended
+[cli][info] Closing currently open stream...
 ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
   built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
   configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
@@ -21,1130 +18,667 @@ ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg develop
   libswscale      4.  8.100 /  4.  8.100
   libswresample   2.  9.100 /  2.  9.100
   libpostproc    54.  7.100 / 54.  7.100
-Input #0, mpegts, from '/root/projects/record/recorded/lennytubby/Solaaaa_2020-05-01_20h31m00s.mp4':
-  Duration: 00:04:32.02, start: 13220.020000, bitrate: 251 kb/s
+Input #0, mpegts, from '/root/projects/record/recorded/lennytubby/maxim_2020-05-03_11h18m05s.mp4':
+  Duration: 02:42:42.12, start: 152.032000, bitrate: 287 kb/s
   Program 1 
-    Stream #0:0[0x100]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, mono, fltp, 27 kb/s
-    Stream #0:1[0x101]: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p(tv, unknown/bt470bg/unknown, progressive), 284x160, 25 fps, 25 tbr, 90k tbn, 2k tbc
+    Stream #0:0[0x100]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 49 kb/s
+    Stream #0:1[0x101]: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p(progressive), 284x160, 30 fps, 30 tbr, 90k tbn, 2k tbc
     Stream #0:2[0x102]: Data: timed_id3 (ID3  / 0x20334449)
-Output #0, mp4, to '/root/projects/record/processed/lennytubby/Solaaaa_2020-05-01_20h31m00s.mp4':
+Output #0, mp4, to '/root/projects/record/processed/lennytubby/maxim_2020-05-03_11h18m05s.mp4':
   Metadata:
     encoder         : Lavf57.83.100
-    Stream #0:0: Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, unknown/bt470bg/unknown, progressive), 284x160, q=2-31, 25 fps, 25 tbr, 90k tbn, 90k tbc
-    Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 27 kb/s
+    Stream #0:0: Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 284x160, q=2-31, 30 fps, 30 tbr, 90k tbn, 90k tbc
+    Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 49 kb/s
 Stream mapping:
   Stream #0:1 -> #0:0 (copy)
   Stream #0:0 -> #0:1 (copy)
 Press [q] to stop, [?] for help
-frame= 6800 fps=0.0 q=-1.0 Lsize=    7044kB time=00:04:31.99 bitrate= 212.2kbits/s speed=1.8e+03x    
-video:6044kB audio:884kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.683550%
-Fixing previously recorded files.
-Fixing /root/projects/record/recorded/lennytubby/Solaaaa_2020-05-01_20h31m00s.mp4.
-Checking for lennytubby every 30.0 seconds. Record with worst quality.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in[cli][info] streamlink is running as root! Be careful!
-[cli][info] Found matching plugin twitch for URL twitch.tv/maxim
+frame=28329 fps=0.0 q=-1.0 size=   26368kB time=00:15:44.28 bitrate= 228.8kbits/s speed=1.89e+03x    frame=53852 fps=53824 q=-1.0 size=   50432kB time=00:29:55.04 bitrate= 230.2kbits/s speed=1.79e+03x    frame=76066 fps=50660 q=-1.0 size=   71168kB time=00:42:15.52 bitrate= 229.9kbits/s speed=1.69e+03x    frame=95406 fps=47504 q=-1.0 size=   89088kB time=00:53:00.17 bitrate= 229.5kbits/s speed=1.58e+03x    frame=109201 fps=43534 q=-1.0 size=  101888kB time=01:00:40.03 bitrate= 229.3kbits/s speed=1.45e+03x    frame=122864 fps=40825 q=-1.0 size=  114944kB time=01:08:15.43 bitrate= 229.9kbits/s speed=1.36e+03x    frame=141210 fps=40211 q=-1.0 size=  132096kB time=01:18:26.97 bitrate= 229.9kbits/s speed=1.34e+03x    frame=157719 fps=39314 q=-1.0 size=  147200kB time=01:27:37.24 bitrate= 229.4kbits/s speed=1.31e+03x    frame=176787 fps=39184 q=-1.0 size=  165120kB time=01:38:12.85 bitrate= 229.5kbits/s speed=1.31e+03x    frame=194785 fps=38866 q=-1.0 size=  182016kB time=01:48:12.81 bitrate= 229.7kbits/s speed=1.3e+03x    frame=212786 fps=38606 q=-1.0 size=  198656kB time=01:58:12.85 bitrate= 229.4kbits/s speed=1.29e+03x    frame=229878 fps=38237 q=-1.0 size=  214784kB time=02:07:42.58 bitrate= 229.6kbits/s speed=1.27e+03x    frame=248995 fps=38237 q=-1.0 size=  232448kB time=02:18:19.78 bitrate= 229.4kbits/s speed=1.27e+03x    frame=266859 fps=38058 q=-1.0 size=  249088kB time=02:28:15.28 bitrate= 229.4kbits/s speed=1.27e+03x    frame=283892 fps=37787 q=-1.0 size=  265216kB time=02:37:43.05 bitrate= 229.6kbits/s speed=1.26e+03x    frame=292836 fps=36559 q=-1.0 Lsize=  285621kB time=02:42:42.10 bitrate= 239.7kbits/s speed=1.22e+03x    
+video:216060kB audio:60328kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 3.340684%
+[cli][info] streamlink is running as root! Be careful!
+[cli][info] Found matching plugin twitch for URL twitch.tv/Solaaaa
 [plugin.twitch][info] Attempting to authenticate using OAuth token
 [plugin.twitch][info] Successfully logged in as lennytubby
-[cli][info] Available streams: audio_only, 160p (worst), 360p, 480p, 720p, 720p60, 1080p60 (best)
+[cli][info] Available streams: audio_only, 160p (worst), 360p, 480p, 720p, 720p50, 1080p50 (best)
 [cli][info] Opening stream: 160p (hls)
- 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
-lennytubby currently offline, checking again in 30.0 seconds.
+[cli][info] Stream ended
+[cli][info] Closing currently open stream...
+ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mpegts, from '/root/projects/record/recorded/lennytubby/Solaaaa_2020-05-03_21h34m35s.mp4':
+  Duration: 04:52:41.26, start: 204.020000, bitrate: 249 kb/s
+  Program 1 
+    Stream #0:0[0x100]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, mono, fltp, 25 kb/s
+    Stream #0:1[0x101]: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p(tv, unknown/bt470bg/unknown, progressive), 284x160, 25 fps, 25 tbr, 90k tbn, 2k tbc
+    Stream #0:2[0x102]: Data: timed_id3 (ID3  / 0x20334449)
+Output #0, mp4, to '/root/projects/record/processed/lennytubby/Solaaaa_2020-05-03_21h34m35s.mp4':
+  Metadata:
+    encoder         : Lavf57.83.100
+    Stream #0:0: Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, unknown/bt470bg/unknown, progressive), 284x160, q=2-31, 25 fps, 25 tbr, 90k tbn, 90k tbc
+    Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 25 kb/s
+Stream mapping:
+  Stream #0:1 -> #0:0 (copy)
+  Stream #0:0 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame=18580 fps=0.0 q=-1.0 size=   18176kB time=00:12:23.18 bitrate= 200.4kbits/s speed=1.49e+03x    frame=30602 fps=29997 q=-1.0 size=   29952kB time=00:20:24.02 bitrate= 200.5kbits/s speed=1.2e+03x    frame=40212 fps=26393 q=-1.0 size=   39680kB time=00:26:48.44 bitrate= 202.1kbits/s speed=1.06e+03x    frame=50168 fps=24668 q=-1.0 size=   49664kB time=00:33:26.71 bitrate= 202.7kbits/s speed= 987x    frame=60722 fps=23965 q=-1.0 size=   60160kB time=00:40:28.82 bitrate= 202.9kbits/s speed= 959x    frame=72923 fps=24030 q=-1.0 size=   72448kB time=00:48:36.88 bitrate= 203.5kbits/s speed= 961x    frame=83619 fps=23657 q=-1.0 size=   83200kB time=00:55:44.74 bitrate= 203.8kbits/s speed= 946x    frame=94468 fps=23414 q=-1.0 size=   93952kB time=01:02:58.70 bitrate= 203.7kbits/s speed= 937x    frame=107343 fps=23654 q=-1.0 size=  106752kB time=01:11:33.69 bitrate= 203.7kbits/s speed= 946x    frame=115125 fps=22851 q=-1.0 size=  114432kB time=01:16:44.99 bitrate= 203.6kbits/s speed= 914x    frame=124842 fps=22341 q=-1.0 size=  124160kB time=01:23:13.66 bitrate= 203.7kbits/s speed= 894x    frame=138911 fps=22817 q=-1.0 size=  138240kB time=01:32:36.43 bitrate= 203.8kbits/s speed= 913x    frame=151976 fps=23062 q=-1.0 size=  151296kB time=01:41:19.03 bitrate= 203.9kbits/s speed= 922x    frame=155698 fps=21860 q=-1.0 size=  154880kB time=01:43:47.90 bitrate= 203.7kbits/s speed= 874x    frame=167257 fps=21940 q=-1.0 size=  166656kB time=01:51:30.26 bitrate= 204.1kbits/s speed= 878x    frame=175202 fps=21564 q=-1.0 size=  174336kB time=01:56:48.04 bitrate= 203.8kbits/s speed= 863x    frame=184323 fps=21368 q=-1.0 size=  183552kB time=02:02:52.88 bitrate= 203.9kbits/s speed= 855x    frame=192975 fps=21128 q=-1.0 size=  192256kB time=02:08:38.97 bitrate= 204.0kbits/s speed= 845x    frame=200951 fps=20859 q=-1.0 size=  200192kB time=02:13:58.01 bitrate= 204.0kbits/s speed= 834x    frame=211411 fps=20862 q=-1.0 size=  210688kB time=02:20:56.38 bitrate= 204.1kbits/s speed= 834x    frame=221615 fps=20838 q=-1.0 size=  220928kB time=02:27:44.57 bitrate= 204.2kbits/s speed= 834x    frame=233967 fps=21011 q=-1.0 size=  232960kB time=02:35:58.65 bitrate= 203.9kbits/s speed= 840x    frame=246098 fps=21151 q=-1.0 size=  244992kB time=02:44:03.88 bitrate= 203.9kbits/s speed= 846x    frame=257714 fps=21236 q=-1.0 size=  256768kB time=02:51:48.54 bitrate= 204.0kbits/s speed= 849x    frame=269301 fps=21313 q=-1.0 size=  268288kB time=02:59:32.03 bitrate= 204.0kbits/s speed= 853x    frame=280682 fps=21368 q=-1.0 size=  279552kB time=03:07:07.24 bitrate= 204.0kbits/s speed= 855x    frame=290464 fps=21302 q=-1.0 size=  289536kB time=03:13:38.51 bitrate= 204.1kbits/s speed= 852x    frame=302119 fps=21373 q=-1.0 size=  301056kB time=03:21:24.75 bitrate= 204.1kbits/s speed= 855x    frame=314666 fps=21500 q=-1.0 size=  313344kB time=03:29:46.60 bitrate= 203.9kbits/s speed= 860x    frame=326866 fps=21596 q=-1.0 size=  325632kB time=03:37:54.62 bitrate= 204.0kbits/s speed= 864x    frame=340121 fps=21753 q=-1.0 size=  338944kB time=03:46:44.82 bitrate= 204.1kbits/s speed= 870x    frame=352002 fps=21815 q=-1.0 size=  350976kB time=03:54:40.04 bitrate= 204.2kbits/s speed= 873x    frame=365203 fps=21949 q=-1.0 size=  364032kB time=04:03:28.08 bitrate= 204.1kbits/s speed= 878x    frame=378450 fps=22081 q=-1.0 size=  376832kB time=04:12:17.98 bitrate= 203.9kbits/s speed= 883x    frame=392396 fps=22246 q=-1.0 size=  390656kB time=04:21:35.82 bitrate= 203.9kbits/s speed= 890x    frame=395500 fps=21797 q=-1.0 size=  393728kB time=04:23:40.01 bitrate= 203.9kbits/s speed= 872x    frame=396938 fps=21229 q=-1.0 size=  395264kB time=04:24:37.50 bitrate= 203.9kbits/s speed= 849x    frame=398418 fps=20699 q=-1.0 size=  396544kB time=04:25:36.70 bitrate= 203.8kbits/s speed= 828x    frame=399695 fps=20162 q=-1.0 size=  397824kB time=04:26:27.79 bitrate= 203.8kbits/s speed= 806x    frame=404456 fps=19897 q=-1.0 size=  402688kB time=04:29:38.23 bitrate= 203.9kbits/s speed= 796x    frame=416154 fps=19981 q=-1.0 size=  414464kB time=04:37:26.12 bitrate= 204.0kbits/s speed= 799x    frame=427103 fps=20023 q=-1.0 size=  425472kB time=04:44:46.29 bitrate= 204.0kbits/s speed= 801x    frame=438953 fps=19882 q=-1.0 Lsize=  449917kB time=04:52:41.23 bitrate= 209.9kbits/s speed= 795x    
+video:385280kB audio:57076kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.709186%
+[cli][info] streamlink is running as root! Be careful!
+[cli][info] Found matching plugin twitch for URL twitch.tv/arturandrzejak
+[plugin.twitch][info] Attempting to authenticate using OAuth token
+[plugin.twitch][info] Successfully logged in as lennytubby
+[cli][info] Available streams: audio_only, 160p (worst), 360p, 480p, 522p (best)
+[cli][info] Opening stream: 522p (hls)
+[cli][info] Stream ended
+[cli][info] Closing currently open stream...
+ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mpegts, from '/root/projects/record/recorded/lennytubby/arturandrzejak_2020-05-04_09h15m08s.mp4':
+  Duration: 01:50:09.21, start: 124.100000, bitrate: 2228 kb/s
+  Program 1 
+    Stream #0:0[0x100]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 125 kb/s
+    Stream #0:1[0x101]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(progressive), 928x522, 20 fps, 20 tbr, 90k tbn, 40 tbc
+    Stream #0:2[0x102]: Data: timed_id3 (ID3  / 0x20334449)
+Output #0, mp4, to '/root/projects/record/processed/lennytubby/arturandrzejak_2020-05-04_09h15m08s.mp4':
+  Metadata:
+    encoder         : Lavf57.83.100
+    Stream #0:0: Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 928x522, q=2-31, 20 fps, 20 tbr, 90k tbn, 90k tbc
+    Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 125 kb/s
+Stream mapping:
+  Stream #0:1 -> #0:0 (copy)
+  Stream #0:0 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame= 1400 fps=0.0 q=-1.0 size=   18176kB time=00:01:09.97 bitrate=2127.8kbits/s speed= 140x    frame= 2934 fps=2928 q=-1.0 size=   37888kB time=00:02:26.67 bitrate=2116.1kbits/s speed= 146x    frame= 4413 fps=2935 q=-1.0 size=   57344kB time=00:03:40.60 bitrate=2129.4kbits/s speed= 147x    frame= 5413 fps=2659 q=-1.0 size=   70144kB time=00:04:30.64 bitrate=2123.2kbits/s speed= 133x    frame= 6343 fps=2500 q=-1.0 size=   82432kB time=00:05:17.10 bitrate=2129.5kbits/s speed= 125x    frame= 7917 fps=2606 q=-1.0 size=  102656kB time=00:06:35.82 bitrate=2124.6kbits/s speed= 130x    frame= 9555 fps=2700 q=-1.0 size=  124160kB time=00:07:57.74 bitrate=2129.0kbits/s speed= 135x    frame=10805 fps=2671 q=-1.0 size=  140288kB time=00:09:00.22 bitrate=2127.3kbits/s speed= 134x    frame=12191 fps=2682 q=-1.0 size=  158208kB time=00:10:09.54 bitrate=2126.3kbits/s speed= 134x    frame=13766 fps=2728 q=-1.0 size=  178944kB time=00:11:28.25 bitrate=2129.9kbits/s speed= 136x    frame=15242 fps=2746 q=-1.0 size=  198144kB time=00:12:42.07 bitrate=2130.0kbits/s speed= 137x    frame=16784 fps=2771 q=-1.0 size=  218112kB time=00:13:59.18 bitrate=2129.2kbits/s speed= 139x    frame=17904 fps=2729 q=-1.0 size=  232448kB time=00:14:55.19 bitrate=2127.2kbits/s speed= 136x    frame=18435 fps=2606 q=-1.0 size=  239360kB time=00:15:21.73 bitrate=2127.3kbits/s speed= 130x    frame=19541 fps=2579 q=-1.0 size=  253952kB time=00:16:17.01 bitrate=2129.3kbits/s speed= 129x    frame=20960 fps=2595 q=-1.0 size=  272384kB time=00:17:27.97 bitrate=2129.2kbits/s speed= 130x    frame=22410 fps=2612 q=-1.0 size=  291072kB time=00:18:40.49 bitrate=2128.0kbits/s speed= 131x    frame=24091 fps=2653 q=-1.0 size=  313088kB time=00:20:04.50 bitrate=2129.4kbits/s speed= 133x    frame=25393 fps=2636 q=-1.0 size=  329984kB time=00:21:09.63 bitrate=2129.1kbits/s speed= 132x    frame=26560 fps=2620 q=-1.0 size=  345088kB time=00:22:08.01 bitrate=2128.7kbits/s speed= 131x    frame=27468 fps=2572 q=-1.0 size=  356864kB time=00:22:53.38 bitrate=2128.6kbits/s speed= 129x    frame=28246 fps=2526 q=-1.0 size=  367104kB time=00:23:32.25 bitrate=2129.4kbits/s speed= 126x    frame=29681 fps=2541 q=-1.0 size=  385792kB time=00:24:44.02 bitrate=2129.6kbits/s speed= 127x    frame=30788 fps=2527 q=-1.0 size=  400128kB time=00:25:39.36 bitrate=2129.4kbits/s speed= 126x    frame=32281 fps=2545 q=-1.0 size=  419584kB time=00:26:54.03 bitrate=2129.6kbits/s speed= 127x    frame=33978 fps=2577 q=-1.0 size=  441600kB time=00:28:18.85 bitrate=2129.4kbits/s speed= 129x    frame=35587 fps=2601 q=-1.0 size=  462336kB time=00:29:39.33 bitrate=2128.6kbits/s speed= 130x    frame=37249 fps=2626 q=-1.0 size=  484096kB time=00:31:02.41 bitrate=2129.3kbits/s speed= 131x    frame=38656 fps=2632 q=-1.0 size=  502272kB time=00:32:12.77 bitrate=2128.9kbits/s speed= 132x    frame=40121 fps=2642 q=-1.0 size=  521472kB time=00:33:26.03 bitrate=2129.5kbits/s speed= 132x    frame=41378 fps=2638 q=-1.0 size=  537600kB time=00:34:28.86 bitrate=2128.7kbits/s speed= 132x    frame=42903 fps=2650 q=-1.0 size=  557568kB time=00:35:45.14 bitrate=2129.3kbits/s speed= 133x    frame=44013 fps=2637 q=-1.0 size=  571904kB time=00:36:40.64 bitrate=2128.9kbits/s speed= 132x    frame=45539 fps=2649 q=-1.0 size=  591616kB time=00:37:56.94 bitrate=2128.5kbits/s speed= 132x    frame=47008 fps=2657 q=-1.0 size=  610816kB time=00:39:10.38 bitrate=2128.9kbits/s speed= 133x    frame=48246 fps=2652 q=-1.0 size=  626944kB time=00:40:12.26 bitrate=2129.1kbits/s speed= 133x    frame=49520 fps=2649 q=-1.0 size=  643584kB time=00:41:16.00 bitrate=2129.3kbits/s speed= 132x    frame=50998 fps=2657 q=-1.0 size=  662784kB time=00:42:29.86 bitrate=2129.3kbits/s speed= 133x    frame=52501 fps=2666 q=-1.0 size=  682240kB time=00:43:45.00 bitrate=2129.1kbits/s speed= 133x    frame=53720 fps=2658 q=-1.0 size=  698112kB time=00:44:46.00 bitrate=2129.2kbits/s speed= 133x    frame=55091 fps=2660 q=-1.0 size=  715776kB time=00:45:54.50 bitrate=2128.7kbits/s speed= 133x    frame=56060 fps=2643 q=-1.0 size=  728576kB time=00:46:42.96 bitrate=2129.3kbits/s speed= 132x    frame=56434 fps=2588 q=-1.0 size=  733440kB time=00:47:01.65 bitrate=2129.4kbits/s speed= 129x    frame=56544 fps=2534 q=-1.0 size=  734720kB time=00:47:07.18 bitrate=2128.9kbits/s speed= 127x    frame=57081 fps=2501 q=-1.0 size=  741888kB time=00:47:34.02 bitrate=2129.5kbits/s speed= 125x    frame=58455 fps=2507 q=-1.0 size=  759552kB time=00:48:42.73 bitrate=2128.9kbits/s speed= 125x    frame=59971 fps=2518 q=-1.0 size=  779264kB time=00:49:58.52 bitrate=2129.0kbits/s speed= 126x    frame=61560 fps=2531 q=-1.0 size=  800000kB time=00:51:18.00 bitrate=2129.2kbits/s speed= 127x    frame=63104 fps=2542 q=-1.0 size=  819968kB time=00:52:35.19 bitrate=2128.9kbits/s speed= 127x    frame=64440 fps=2545 q=-1.0 size=  837376kB time=00:53:42.01 bitrate=2129.0kbits/s speed= 127x    frame=65721 fps=2545 q=-1.0 size=  854016kB time=00:54:46.03 bitrate=2129.0kbits/s speed= 127x    frame=67031 fps=2546 q=-1.0 size=  871168kB time=00:55:51.51 bitrate=2129.4kbits/s speed= 127x    frame=68435 fps=2551 q=-1.0 size=  889344kB time=00:57:01.73 bitrate=2129.2kbits/s speed= 128x    frame=69636 fps=2548 q=-1.0 size=  904960kB time=00:58:01.77 bitrate=2129.2kbits/s speed= 127x    frame=70972 fps=2551 q=-1.0 size=  922368kB time=00:59:08.58 bitrate=2129.3kbits/s speed= 128x    frame=72114 fps=2546 q=-1.0 size=  937216kB time=01:00:05.65 bitrate=2129.3kbits/s speed= 127x    frame=73684 fps=2556 q=-1.0 size=  957440kB time=01:01:24.18 bitrate=2128.9kbits/s speed= 128x    frame=75265 fps=2566 q=-1.0 size=  978176kB time=01:02:43.20 bitrate=2129.4kbits/s speed= 128x    frame=76358 fps=2560 q=-1.0 size=  992256kB time=01:03:37.88 bitrate=2129.1kbits/s speed= 128x    frame=77491 fps=2555 q=-1.0 size= 1007104kB time=01:04:34.52 bitrate=2129.3kbits/s speed= 128x    frame=78596 fps=2549 q=-1.0 size= 1021440kB time=01:05:29.76 bitrate=2129.3kbits/s speed= 127x    frame=80094 fps=2556 q=-1.0 size= 1040896kB time=01:06:44.69 bitrate=2129.3kbits/s speed= 128x    frame=81647 fps=2565 q=-1.0 size= 1061120kB time=01:08:02.31 bitrate=2129.4kbits/s speed= 128x    frame=83135 fps=2571 q=-1.0 size= 1080320kB time=01:09:16.73 bitrate=2129.1kbits/s speed= 129x    frame=83840 fps=2553 q=-1.0 size= 1089536kB time=01:09:52.00 bitrate=2129.2kbits/s speed= 128x    frame=84274 fps=2528 q=-1.0 size= 1095168kB time=01:10:13.69 bitrate=2129.2kbits/s speed= 126x    frame=85790 fps=2535 q=-1.0 size= 1114880kB time=01:11:29.48 bitrate=2129.2kbits/s speed= 127x    frame=87230 fps=2540 q=-1.0 size= 1133568kB time=01:12:41.49 bitrate=2129.1kbits/s speed= 127x    frame=88687 fps=2546 q=-1.0 size= 1152512kB time=01:13:54.30 bitrate=2129.2kbits/s speed= 127x    frame=89920 fps=2544 q=-1.0 size= 1168640kB time=01:14:56.00 bitrate=2129.3kbits/s speed= 127x    frame=91551 fps=2554 q=-1.0 size= 1189632kB time=01:16:17.52 bitrate=2129.0kbits/s speed= 128x    frame=92912 fps=2556 q=-1.0 size= 1207296kB time=01:17:25.56 bitrate=2128.9kbits/s speed= 128x    frame=94470 fps=2564 q=-1.0 size= 1227776kB time=01:18:43.46 bitrate=2129.4kbits/s speed= 128x    frame=95909 fps=2568 q=-1.0 size= 1246464kB time=01:19:55.42 bitrate=2129.3kbits/s speed= 128x    frame=97286 fps=2570 q=-1.0 size= 1264384kB time=01:21:04.27 bitrate=2129.4kbits/s speed= 129x    frame=99158 fps=2585 q=-1.0 size= 1288704kB time=01:22:37.87 bitrate=2129.4kbits/s speed= 129x    frame=99808 fps=2565 q=-1.0 size= 1297152kB time=01:23:10.37 bitrate=2129.4kbits/s speed= 128x    frame=101361 fps=2572 q=-1.0 size= 1317376kB time=01:24:28.02 bitrate=2129.4kbits/s speed= 129x    frame=102801 fps=2575 q=-1.0 size= 1336064kB time=01:25:40.03 bitrate=2129.4kbits/s speed= 129x    frame=104041 fps=2573 q=-1.0 size= 1352192kB time=01:26:42.02 bitrate=2129.4kbits/s speed= 129x    frame=105598 fps=2580 q=-1.0 size= 1372160kB time=01:27:59.86 bitrate=2129.0kbits/s speed= 129x    frame=106979 fps=2581 q=-1.0 size= 1390336kB time=01:29:08.94 bitrate=2129.3kbits/s speed= 129x    frame=108368 fps=2584 q=-1.0 size= 1408256kB time=01:30:18.39 bitrate=2129.1kbits/s speed= 129x    frame=110110 fps=2594 q=-1.0 size= 1431040kB time=01:31:45.46 bitrate=2129.4kbits/s speed= 130x    frame=111088 fps=2587 q=-1.0 size= 1443584kB time=01:32:34.39 bitrate=2129.1kbits/s speed= 129x    frame=111666 fps=2570 q=-1.0 size= 1451264kB time=01:33:03.25 bitrate=2129.4kbits/s speed= 129x    frame=113470 fps=2582 q=-1.0 size= 1474560kB time=01:34:33.46 bitrate=2129.1kbits/s speed= 129x    frame=113729 fps=2559 q=-1.0 size= 1477888kB time=01:34:46.44 bitrate=2129.1kbits/s speed= 128x    frame=115192 fps=2563 q=-1.0 size= 1497088kB time=01:35:59.56 bitrate=2129.4kbits/s speed= 128x    frame=116800 fps=2570 q=-1.0 size= 1517824kB time=01:37:20.02 bitrate=2129.1kbits/s speed= 129x    frame=118541 fps=2580 q=-1.0 size= 1540608kB time=01:38:47.00 bitrate=2129.3kbits/s speed= 129x    frame=120195 fps=2588 q=-1.0 size= 1562112kB time=01:40:09.71 bitrate=2129.4kbits/s speed= 129x    frame=122047 fps=2600 q=-1.0 size= 1586176kB time=01:41:42.31 bitrate=2129.3kbits/s speed= 130x    frame=123641 fps=2606 q=-1.0 size= 1606912kB time=01:43:02.02 bitrate=2129.4kbits/s speed= 130x    frame=125080 fps=2607 q=-1.0 size= 1625600kB time=01:44:14.00 bitrate=2129.3kbits/s speed= 130x    frame=126480 fps=2609 q=-1.0 size= 1643776kB time=01:45:23.99 bitrate=2129.3kbits/s speed= 130x    frame=127641 fps=2606 q=-1.0 size= 1658880kB time=01:46:22.04 bitrate=2129.3kbits/s speed= 130x    frame=127811 fps=2578 q=-1.0 size= 1660928kB time=01:46:30.54 bitrate=2129.1kbits/s speed= 129x    frame=127907 fps=2552 q=-1.0 size= 1662208kB time=01:46:35.32 bitrate=2129.2kbits/s speed= 128x    frame=128678 fps=2541 q=-1.0 size= 1672192kB time=01:47:13.89 bitrate=2129.1kbits/s speed= 127x    frame=130300 fps=2548 q=-1.0 size= 1693440kB time=01:48:34.95 bitrate=2129.4kbits/s speed= 127x    frame=131856 fps=2554 q=-1.0 size= 1713664kB time=01:49:52.76 bitrate=2129.4kbits/s speed= 128x    frame=132167 fps=2551 q=-1.0 Lsize= 1721888kB time=01:50:09.22 bitrate=2134.2kbits/s speed= 128x    
+video:1614248kB audio:105215kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.141043%
+[cli][info] streamlink is running as root! Be careful!
+[cli][info] Found matching plugin twitch for URL twitch.tv/ukoethe
+[plugin.twitch][info] Attempting to authenticate using OAuth token
+[plugin.twitch][info] Successfully logged in as lennytubby
+[cli][info] Available streams: audio_only, 160p (worst), 360p, 480p, 648p (best)
+[cli][info] Opening stream: 648p (hls)
+[cli][info] Stream ended
+[cli][info] Closing currently open stream...
+ffmpeg version 3.4.6-0ubuntu0.18.04.1 Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 7 (Ubuntu 7.3.0-16ubuntu3)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.18.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --enable-gpl --disable-stripping --enable-avresample --enable-avisynth --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librubberband --enable-librsvg --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzmq --enable-libzvbi --enable-omx --enable-openal --enable-opengl --enable-sdl2 --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libopencv --enable-libx264 --enable-shared
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mpegts, from '/root/projects/record/recorded/lennytubby/ukoethe_2020-05-05_12h24m29s.mp4':
+  Duration: 00:55:39.91, start: 166.050000, bitrate: 2175 kb/s
+  Program 1 
+    Stream #0:0[0x100]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, 99 kb/s
+    Stream #0:1[0x101]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt470bg/bt709/bt709, progressive), 1152x648 [SAR 1:1 DAR 16:9], 20 fps, 20 tbr, 90k tbn, 40 tbc
+    Stream #0:2[0x102]: Data: timed_id3 (ID3  / 0x20334449)
+Output #0, mp4, to '/root/projects/record/processed/lennytubby/ukoethe_2020-05-05_12h24m29s.mp4':
+  Metadata:
+    encoder         : Lavf57.83.100
+    Stream #0:0: Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt470bg/bt709/bt709, progressive), 1152x648 [SAR 1:1 DAR 16:9], q=2-31, 20 fps, 20 tbr, 90k tbn, 90k tbc
+    Stream #0:1: Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 99 kb/s
+Stream mapping:
+  Stream #0:1 -> #0:0 (copy)
+  Stream #0:0 -> #0:1 (copy)
+Press [q] to stop, [?] for help
+frame= 2052 fps=0.0 q=-1.0 size=   26112kB time=00:01:42.63 bitrate=2084.3kbits/s speed= 205x    frame= 3579 fps=3570 q=-1.0 size=   46080kB time=00:03:00.48 bitrate=2091.5kbits/s speed= 180x    frame= 5031 fps=3250 q=-1.0 size=   64512kB time=00:04:13.09 bitrate=2088.1kbits/s speed= 164x    frame= 6612 fps=3226 q=-1.0 size=   85248kB time=00:05:33.83 bitrate=2091.9kbits/s speed= 163x    frame= 8110 fps=3177 q=-1.0 size=  104704kB time=00:06:49.31 bitrate=2095.5kbits/s speed= 160x    frame= 8510 fps=2736 q=-1.0 size=  109824kB time=00:07:09.93 bitrate=2092.6kbits/s speed= 138x    frame= 9673 fps=2680 q=-1.0 size=  124672kB time=00:08:08.05 bitrate=2092.6kbits/s speed= 135x    frame=11456 fps=2787 q=-1.0 size=  147712kB time=00:09:37.82 bitrate=2094.2kbits/s speed= 141x    frame=12828 fps=2767 q=-1.0 size=  165376kB time=00:10:46.41 bitrate=2095.8kbits/s speed= 139x    frame=13475 fps=2623 q=-1.0 size=  173568kB time=00:11:18.78 bitrate=2094.7kbits/s speed= 132x    frame=15123 fps=2683 q=-1.0 size=  194816kB time=00:12:41.75 bitrate=2095.1kbits/s speed= 135x    frame=16471 fps=2683 q=-1.0 size=  212224kB time=00:13:50.06 bitrate=2094.5kbits/s speed= 135x    frame=18079 fps=2723 q=-1.0 size=  232960kB time=00:15:12.03 bitrate=2092.5kbits/s speed= 137x    frame=19704 fps=2760 q=-1.0 size=  254208kB time=00:16:34.62 bitrate=2093.7kbits/s speed= 139x    frame=21454 fps=2808 q=-1.0 size=  276992kB time=00:18:03.30 bitrate=2094.6kbits/s speed= 142x    frame=22827 fps=2796 q=-1.0 size=  294400kB time=00:19:12.03 bitrate=2093.5kbits/s speed= 141x    frame=24152 fps=2766 q=-1.0 size=  312064kB time=00:20:20.13 bitrate=2095.2kbits/s speed= 140x    frame=26041 fps=2820 q=-1.0 size=  336384kB time=00:21:56.03 bitrate=2093.9kbits/s speed= 143x    frame=27664 fps=2842 q=-1.0 size=  357376kB time=00:23:17.90 bitrate=2094.3kbits/s speed= 144x    frame=27945 fps=2424 q=-1.0 size=  360960kB time=00:23:32.02 bitrate=2094.1kbits/s speed= 122x    frame=29291 fps=2435 q=-1.0 size=  378624kB time=00:24:40.57 bitrate=2094.9kbits/s speed= 123x    frame=31112 fps=2483 q=-1.0 size=  402176kB time=00:26:12.91 bitrate=2094.6kbits/s speed= 126x    frame=33064 fps=2537 q=-1.0 size=  427008kB time=00:27:50.53 bitrate=2094.0kbits/s speed= 128x    frame=34714 fps=2565 q=-1.0 size=  448256kB time=00:29:13.61 bitrate=2094.0kbits/s speed= 130x    frame=36384 fps=2593 q=-1.0 size=  470272kB time=00:30:39.22 bitrate=2094.6kbits/s speed= 131x    frame=38064 fps=2619 q=-1.0 size=  491776kB time=00:32:03.84 bitrate=2094.1kbits/s speed= 132x    frame=40059 fps=2664 q=-1.0 size=  517632kB time=00:33:44.87 bitrate=2094.2kbits/s speed= 135x    frame=42016 fps=2705 q=-1.0 size=  542720kB time=00:35:22.72 bitrate=2094.5kbits/s speed= 137x    frame=43927 fps=2739 q=-1.0 size=  567296kB time=00:36:58.85 bitrate=2094.5kbits/s speed= 138x    frame=45781 fps=2768 q=-1.0 size=  591872kB time=00:38:35.56 bitrate=2093.9kbits/s speed= 140x    frame=47619 fps=2795 q=-1.0 size=  615424kB time=00:40:07.46 bitrate=2094.1kbits/s speed= 141x    frame=49476 fps=2821 q=-1.0 size=  640000kB time=00:41:44.27 bitrate=2093.6kbits/s speed= 143x    frame=51419 fps=2851 q=-1.0 size=  665088kB time=00:43:23.44 bitrate=2092.8kbits/s speed= 144x    frame=51902 fps=2796 q=-1.0 size=  671488kB time=00:43:48.19 bitrate=2093.0kbits/s speed= 142x    frame=52510 fps=2754 q=-1.0 size=  679424kB time=00:44:18.56 bitrate=2093.5kbits/s speed= 139x    frame=53148 fps=2715 q=-1.0 size=  687360kB time=00:44:50.49 bitrate=2092.9kbits/s speed= 137x    frame=53286 fps=2653 q=-1.0 size=  689152kB time=00:44:57.39 bitrate=2093.0kbits/s speed= 134x    frame=53824 fps=2614 q=-1.0 size=  696576kB time=00:45:26.09 bitrate=2093.2kbits/s speed= 132x    frame=54293 fps=2536 q=-1.0 size=  702464kB time=00:45:49.54 bitrate=2092.9kbits/s speed= 128x    frame=56178 fps=2564 q=-1.0 size=  726784kB time=00:47:24.48 bitrate=2093.1kbits/s speed= 130x    frame=58190 fps=2596 q=-1.0 size=  752896kB time=00:49:06.26 bitrate=2093.4kbits/s speed= 131x    frame=59363 fps=2589 q=-1.0 size=  767744kB time=00:50:04.93 bitrate=2093.0kbits/s speed= 131x    frame=59753 fps=2550 q=-1.0 size=  772864kB time=00:50:24.42 bitrate=2093.4kbits/s speed= 129x    frame=62115 fps=2596 q=-1.0 size=  803072kB time=00:52:26.11 bitrate=2091.1kbits/s speed= 131x    frame=64350 fps=2634 q=-1.0 size=  830720kB time=00:54:21.58 bitrate=2086.5kbits/s speed= 134x    frame=64924 fps=2604 q=-1.0 size=  838144kB time=00:54:52.03 bitrate=2085.7kbits/s speed= 132x    frame=65044 fps=2532 q=-1.0 size=  839424kB time=00:54:58.04 bitrate=2085.0kbits/s speed= 128x    frame=65865 fps=2529 q=-1.0 Lsize=  851970kB time=00:55:39.93 bitrate=2089.7kbits/s speed= 128x    
+video:813354kB audio:37320kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.152342%
+Started Twitch record
+Checking for lennytubby every 30.0 seconds. Record with best quality.
 lennytubby online. Stream recording in session.
-steaming channels: 'maxim'
-Recording channel: maxim
-Traceback (most recent call last):
-  File "record.py", line 192, in <module>
-    main(sys.argv[1:])
-  File "record.py", line 189, in main
-    twitch_recorder.run()
-  File "record.py", line 71, in run
-    self.loopcheck()
-  File "record.py", line 125, in loopcheck
-    status, logins = self.check_user()
-  File "record.py", line 118, in check_user
-    return status, logins
-UnboundLocalError: local variable 'status' referenced before assignment
+steaming channels: 'arturandrzejak'
+Recording channel: arturandrzejak
+3
+09h15m45s   unexpected error. will try again in 5 minutes.
+3
+09h20m52s   unexpected error. will try again in 5 minutes.
+3
+09h25m59s   unexpected error. will try again in 5 minutes.
+3
+09h31m05s   unexpected error. will try again in 5 minutes.
+3
+09h36m12s   unexpected error. will try again in 5 minutes.
+3
+09h41m19s   unexpected error. will try again in 5 minutes.
+3
+09h46m27s   unexpected error. will try again in 5 minutes.
+3
+09h51m34s   unexpected error. will try again in 5 minutes.
+3
+09h56m41s   unexpected error. will try again in 5 minutes.
+3
+10h01m48s   unexpected error. will try again in 5 minutes.
+3
+10h06m55s   unexpected error. will try again in 5 minutes.
+3
+10h12m02s   unexpected error. will try again in 5 minutes.
+3
+10h17m09s   unexpected error. will try again in 5 minutes.
+3
+10h22m16s   unexpected error. will try again in 5 minutes.
+3
+10h27m23s   unexpected error. will try again in 5 minutes.
+3
+10h32m30s   unexpected error. will try again in 5 minutes.
+3
+10h37m37s   unexpected error. will try again in 5 minutes.
+3
+10h42m44s   unexpected error. will try again in 5 minutes.
+3
+10h47m51s   unexpected error. will try again in 5 minutes.
+3
+10h52m58s   unexpected error. will try again in 5 minutes.
+3
+10h58m05s   unexpected error. will try again in 5 minutes.
+3
+11h03m12s   unexpected error. will try again in 5 minutes.
+Done, Video processed, 2020-05-04
+3
+18h00m25s   unexpected error. will try again in 5 minutes.
+3
+18h05m25s   unexpected error. will try again in 5 minutes.
+3
+18h10m26s   unexpected error. will try again in 5 minutes.
+3
+18h15m26s   unexpected error. will try again in 5 minutes.
+3
+18h20m26s   unexpected error. will try again in 5 minutes.
+3
+18h25m26s   unexpected error. will try again in 5 minutes.
+3
+18h30m27s   unexpected error. will try again in 5 minutes.
+3
+18h35m27s   unexpected error. will try again in 5 minutes.
+3
+18h40m27s   unexpected error. will try again in 5 minutes.
+3
+18h45m28s   unexpected error. will try again in 5 minutes.
+3
+18h50m28s   unexpected error. will try again in 5 minutes.
+3
+18h55m28s   unexpected error. will try again in 5 minutes.
+3
+19h00m29s   unexpected error. will try again in 5 minutes.
+3
+19h05m29s   unexpected error. will try again in 5 minutes.
+3
+19h10m29s   unexpected error. will try again in 5 minutes.
+3
+19h15m29s   unexpected error. will try again in 5 minutes.
+3
+19h20m30s   unexpected error. will try again in 5 minutes.
+3
+19h25m30s   unexpected error. will try again in 5 minutes.
+3
+19h30m30s   unexpected error. will try again in 5 minutes.
+3
+19h35m31s   unexpected error. will try again in 5 minutes.
+3
+19h40m31s   unexpected error. will try again in 5 minutes.
+3
+19h45m31s   unexpected error. will try again in 5 minutes.
+3
+19h50m31s   unexpected error. will try again in 5 minutes.
+3
+19h55m32s   unexpected error. will try again in 5 minutes.
+3
+20h00m32s   unexpected error. will try again in 5 minutes.
+3
+20h05m32s   unexpected error. will try again in 5 minutes.
+3
+20h10m33s   unexpected error. will try again in 5 minutes.
+3
+20h15m33s   unexpected error. will try again in 5 minutes.
+3
+20h20m33s   unexpected error. will try again in 5 minutes.
+3
+20h25m33s   unexpected error. will try again in 5 minutes.
+3
+20h30m34s   unexpected error. will try again in 5 minutes.
+3
+20h35m34s   unexpected error. will try again in 5 minutes.
+3
+20h40m34s   unexpected error. will try again in 5 minutes.
+3
+20h45m35s   unexpected error. will try again in 5 minutes.
+3
+20h50m35s   unexpected error. will try again in 5 minutes.
+3
+20h55m35s   unexpected error. will try again in 5 minutes.
+3
+21h00m36s   unexpected error. will try again in 5 minutes.
+3
+21h05m36s   unexpected error. will try again in 5 minutes.
+3
+21h10m36s   unexpected error. will try again in 5 minutes.
+3
+21h15m36s   unexpected error. will try again in 5 minutes.
+3
+21h20m37s   unexpected error. will try again in 5 minutes.
+3
+21h25m37s   unexpected error. will try again in 5 minutes.
+3
+21h30m37s   unexpected error. will try again in 5 minutes.
+3
+21h35m38s   unexpected error. will try again in 5 minutes.
+3
+21h40m38s   unexpected error. will try again in 5 minutes.
+3
+21h45m38s   unexpected error. will try again in 5 minutes.
+3
+21h50m39s   unexpected error. will try again in 5 minutes.
+3
+21h55m39s   unexpected error. will try again in 5 minutes.
+lennytubby online. Stream recording in session.
+steaming channels: 'ukoethe'
+Recording channel: ukoethe
+3
+12h25m06s   unexpected error. will try again in 5 minutes.
+3
+12h30m13s   unexpected error. will try again in 5 minutes.
+3
+12h35m20s   unexpected error. will try again in 5 minutes.
+3
+12h40m28s   unexpected error. will try again in 5 minutes.
+3
+12h45m35s   unexpected error. will try again in 5 minutes.
+3
+12h50m42s   unexpected error. will try again in 5 minutes.
+3
+12h55m50s   unexpected error. will try again in 5 minutes.
+3
+13h00m57s   unexpected error. will try again in 5 minutes.
+3
+13h06m04s   unexpected error. will try again in 5 minutes.
+3
+13h11m11s   unexpected error. will try again in 5 minutes.
+3
+13h16m18s   unexpected error. will try again in 5 minutes.
+Done, Video processed, 2020-05-05
+3
+13h24m23s   unexpected error. will try again in 5 minutes.
+3
+13h29m30s   unexpected error. will try again in 5 minutes.
+3
+13h34m37s   unexpected error. will try again in 5 minutes.
+3
+13h39m44s   unexpected error. will try again in 5 minutes.
+3
+13h44m51s   unexpected error. will try again in 5 minutes.
+3
+09h23m32s   unexpected error. will try again in 5 minutes.
+3
+09h28m39s   unexpected error. will try again in 5 minutes.
+3
+09h33m46s   unexpected error. will try again in 5 minutes.
+3
+09h38m53s   unexpected error. will try again in 5 minutes.
+3
+09h44m00s   unexpected error. will try again in 5 minutes.
+3
+09h49m07s   unexpected error. will try again in 5 minutes.
+3
+09h54m14s   unexpected error. will try again in 5 minutes.
+3
+09h59m21s   unexpected error. will try again in 5 minutes.
+3
+10h04m28s   unexpected error. will try again in 5 minutes.
+3
+10h09m35s   unexpected error. will try again in 5 minutes.
+3
+10h14m42s   unexpected error. will try again in 5 minutes.
+3
+10h19m50s   unexpected error. will try again in 5 minutes.
+3
+10h24m57s   unexpected error. will try again in 5 minutes.
+3
+10h30m04s   unexpected error. will try again in 5 minutes.
+3
+10h35m12s   unexpected error. will try again in 5 minutes.
+3
+10h40m19s   unexpected error. will try again in 5 minutes.
+3
+10h45m27s   unexpected error. will try again in 5 minutes.
+3
+10h50m34s   unexpected error. will try again in 5 minutes.
+3
+10h55m41s   unexpected error. will try again in 5 minutes.
+3
+11h00m48s   unexpected error. will try again in 5 minutes.
+3
+18h00m09s   unexpected error. will try again in 5 minutes.
+3
+18h05m09s   unexpected error. will try again in 5 minutes.
+3
+18h10m10s   unexpected error. will try again in 5 minutes.
+3
+18h15m10s   unexpected error. will try again in 5 minutes.
+3
+18h20m10s   unexpected error. will try again in 5 minutes.
+3
+18h25m10s   unexpected error. will try again in 5 minutes.
+3
+18h30m11s   unexpected error. will try again in 5 minutes.
+3
+18h35m11s   unexpected error. will try again in 5 minutes.
+3
+18h40m11s   unexpected error. will try again in 5 minutes.
+3
+18h45m12s   unexpected error. will try again in 5 minutes.
+3
+18h50m12s   unexpected error. will try again in 5 minutes.
+3
+18h55m12s   unexpected error. will try again in 5 minutes.
+3
+19h00m13s   unexpected error. will try again in 5 minutes.
+3
+19h05m13s   unexpected error. will try again in 5 minutes.
+3
+19h10m13s   unexpected error. will try again in 5 minutes.
+3
+19h15m13s   unexpected error. will try again in 5 minutes.
+3
+19h20m14s   unexpected error. will try again in 5 minutes.
+3
+19h25m14s   unexpected error. will try again in 5 minutes.
+3
+19h30m14s   unexpected error. will try again in 5 minutes.
+3
+19h35m15s   unexpected error. will try again in 5 minutes.
+3
+19h40m15s   unexpected error. will try again in 5 minutes.
+3
+19h45m15s   unexpected error. will try again in 5 minutes.
+3
+19h50m16s   unexpected error. will try again in 5 minutes.
+3
+19h55m16s   unexpected error. will try again in 5 minutes.
+3
+20h00m16s   unexpected error. will try again in 5 minutes.
+3
+20h05m16s   unexpected error. will try again in 5 minutes.
+3
+20h10m17s   unexpected error. will try again in 5 minutes.
+3
+20h15m17s   unexpected error. will try again in 5 minutes.
+3
+20h20m17s   unexpected error. will try again in 5 minutes.
+3
+20h25m18s   unexpected error. will try again in 5 minutes.
+3
+20h30m18s   unexpected error. will try again in 5 minutes.
+3
+20h35m18s   unexpected error. will try again in 5 minutes.
+3
+20h40m19s   unexpected error. will try again in 5 minutes.
+3
+20h45m19s   unexpected error. will try again in 5 minutes.
+3
+20h50m19s   unexpected error. will try again in 5 minutes.
+3
+20h55m19s   unexpected error. will try again in 5 minutes.
+3
+21h00m20s   unexpected error. will try again in 5 minutes.
+3
+21h05m20s   unexpected error. will try again in 5 minutes.
+3
+21h10m20s   unexpected error. will try again in 5 minutes.
+3
+21h15m21s   unexpected error. will try again in 5 minutes.
+3
+21h20m21s   unexpected error. will try again in 5 minutes.
+3
+21h25m21s   unexpected error. will try again in 5 minutes.
+3
+21h30m21s   unexpected error. will try again in 5 minutes.
+3
+21h35m22s   unexpected error. will try again in 5 minutes.
+3
+21h40m22s   unexpected error. will try again in 5 minutes.
+3
+21h45m22s   unexpected error. will try again in 5 minutes.
+3
+21h50m23s   unexpected error. will try again in 5 minutes.
+3
+21h55m23s   unexpected error. will try again in 5 minutes.
+3
+22h00m23s   unexpected error. will try again in 5 minutes.
+3
+22h05m24s   unexpected error. will try again in 5 minutes.
+3
+22h10m24s   unexpected error. will try again in 5 minutes.
+3
+22h15m24s   unexpected error. will try again in 5 minutes.
+3
+22h20m24s   unexpected error. will try again in 5 minutes.
+3
+22h25m25s   unexpected error. will try again in 5 minutes.
+3
+22h30m25s   unexpected error. will try again in 5 minutes.
+3
+22h35m25s   unexpected error. will try again in 5 minutes.
+3
+22h40m26s   unexpected error. will try again in 5 minutes.
+3
+22h45m26s   unexpected error. will try again in 5 minutes.
+3
+22h50m26s   unexpected error. will try again in 5 minutes.
+3
+22h55m27s   unexpected error. will try again in 5 minutes.
+3
+23h00m27s   unexpected error. will try again in 5 minutes.
+3
+23h05m27s   unexpected error. will try again in 5 minutes.
+3
+23h10m27s   unexpected error. will try again in 5 minutes.
+3
+23h15m28s   unexpected error. will try again in 5 minutes.
+3
+23h20m28s   unexpected error. will try again in 5 minutes.
+3
+23h25m28s   unexpected error. will try again in 5 minutes.
+3
+23h30m29s   unexpected error. will try again in 5 minutes.
+3
+23h35m29s   unexpected error. will try again in 5 minutes.
+3
+23h40m29s   unexpected error. will try again in 5 minutes.
+3
+23h45m30s   unexpected error. will try again in 5 minutes.
+3
+23h50m30s   unexpected error. will try again in 5 minutes.
+3
+23h55m30s   unexpected error. will try again in 5 minutes.
+3
+00h00m30s   unexpected error. will try again in 5 minutes.
+3
+00h05m31s   unexpected error. will try again in 5 minutes.
+3
+00h10m31s   unexpected error. will try again in 5 minutes.
+3
+00h15m31s   unexpected error. will try again in 5 minutes.
+3
+00h20m32s   unexpected error. will try again in 5 minutes.
+3
+00h25m32s   unexpected error. will try again in 5 minutes.
+3
+00h30m32s   unexpected error. will try again in 5 minutes.
+3
+00h35m32s   unexpected error. will try again in 5 minutes.
+3
+00h40m33s   unexpected error. will try again in 5 minutes.
+3
+00h45m33s   unexpected error. will try again in 5 minutes.
+3
+00h50m33s   unexpected error. will try again in 5 minutes.
+3
+00h55m34s   unexpected error. will try again in 5 minutes.
+3
+01h00m34s   unexpected error. will try again in 5 minutes.
+3
+01h05m34s   unexpected error. will try again in 5 minutes.
+3
+01h10m34s   unexpected error. will try again in 5 minutes.
+3
+01h15m35s   unexpected error. will try again in 5 minutes.
+3
+01h20m35s   unexpected error. will try again in 5 minutes.
+3
+01h25m35s   unexpected error. will try again in 5 minutes.
+3
+01h30m36s   unexpected error. will try again in 5 minutes.
+3
+01h35m36s   unexpected error. will try again in 5 minutes.
+3
+01h40m36s   unexpected error. will try again in 5 minutes.
+3
+01h45m36s   unexpected error. will try again in 5 minutes.
+3
+01h50m37s   unexpected error. will try again in 5 minutes.
+3
+01h55m37s   unexpected error. will try again in 5 minutes.
+3
+02h00m37s   unexpected error. will try again in 5 minutes.
+3
+02h05m38s   unexpected error. will try again in 5 minutes.
+3
+02h10m38s   unexpected error. will try again in 5 minutes.
+3
+02h15m38s   unexpected error. will try again in 5 minutes.
+3
+02h20m39s   unexpected error. will try again in 5 minutes.
+3
+02h25m39s   unexpected error. will try again in 5 minutes.
+3
+02h30m39s   unexpected error. will try again in 5 minutes.
+3
+02h35m39s   unexpected error. will try again in 5 minutes.
+3
+02h40m40s   unexpected error. will try again in 5 minutes.
+3
+02h45m40s   unexpected error. will try again in 5 minutes.
+3
+02h50m40s   unexpected error. will try again in 5 minutes.
+3
+02h55m41s   unexpected error. will try again in 5 minutes.
+3
+03h00m41s   unexpected error. will try again in 5 minutes.
+3
+03h05m41s   unexpected error. will try again in 5 minutes.
+3
+03h10m42s   unexpected error. will try again in 5 minutes.
+3
+03h15m42s   unexpected error. will try again in 5 minutes.
+3
+03h20m42s   unexpected error. will try again in 5 minutes.
+3
+03h25m42s   unexpected error. will try again in 5 minutes.
+3
+03h30m43s   unexpected error. will try again in 5 minutes.
+3
+03h35m43s   unexpected error. will try again in 5 minutes.
+3
+03h40m43s   unexpected error. will try again in 5 minutes.
+3
+03h45m44s   unexpected error. will try again in 5 minutes.
+3
+03h50m44s   unexpected error. will try again in 5 minutes.
+3
+03h55m44s   unexpected error. will try again in 5 minutes.
+3
+04h00m44s   unexpected error. will try again in 5 minutes.
+3
+04h05m45s   unexpected error. will try again in 5 minutes.
+3
+04h10m45s   unexpected error. will try again in 5 minutes.
+3
+04h15m45s   unexpected error. will try again in 5 minutes.
+3
+04h20m46s   unexpected error. will try again in 5 minutes.
+3
+04h25m46s   unexpected error. will try again in 5 minutes.
+3
+04h30m46s   unexpected error. will try again in 5 minutes.
+3
+04h35m47s   unexpected error. will try again in 5 minutes.
+3
+04h40m47s   unexpected error. will try again in 5 minutes.
+3
+04h45m47s   unexpected error. will try again in 5 minutes.
+3
+04h50m47s   unexpected error. will try again in 5 minutes.
+3
+04h55m48s   unexpected error. will try again in 5 minutes.
+3
+05h00m48s   unexpected error. will try again in 5 minutes.
+3
+05h05m48s   unexpected error. will try again in 5 minutes.
+3
+05h10m49s   unexpected error. will try again in 5 minutes.
+3
+05h15m49s   unexpected error. will try again in 5 minutes.
+3
+05h20m49s   unexpected error. will try again in 5 minutes.
+3
+05h25m49s   unexpected error. will try again in 5 minutes.
+3
+05h30m50s   unexpected error. will try again in 5 minutes.
+3
+05h35m50s   unexpected error. will try again in 5 minutes.
+3
+05h40m50s   unexpected error. will try again in 5 minutes.
+3
+05h45m51s   unexpected error. will try again in 5 minutes.
+3
+05h50m51s   unexpected error. will try again in 5 minutes.
+3
+05h55m51s   unexpected error. will try again in 5 minutes.
+3
+06h00m52s   unexpected error. will try again in 5 minutes.
+3
+06h05m52s   unexpected error. will try again in 5 minutes.
+3
+06h10m52s   unexpected error. will try again in 5 minutes.
+3
+06h15m52s   unexpected error. will try again in 5 minutes.
+3
+06h20m53s   unexpected error. will try again in 5 minutes.
+3
+06h25m53s   unexpected error. will try again in 5 minutes.
+3
+06h30m53s   unexpected error. will try again in 5 minutes.
+3
+06h35m54s   unexpected error. will try again in 5 minutes.
+3
+06h40m54s   unexpected error. will try again in 5 minutes.
+3
+06h45m54s   unexpected error. will try again in 5 minutes.
+3
+06h50m55s   unexpected error. will try again in 5 minutes.
+3
+06h55m55s   unexpected error. will try again in 5 minutes.
+3
+07h00m55s   unexpected error. will try again in 5 minutes.

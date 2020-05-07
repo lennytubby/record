@@ -29,10 +29,11 @@ class TwitchRecorder:
         self.username = "lennytubby"
         self.twitchid = "109929194"
         self.subtoken = "zzh7207rnaqwj4c9ubvrtbkkenviw7"
-        self.quality = "worst"
-        self.channels = ["ukoethe","arturandrzejak","maxim","solaaaa"]
+        self.quality = "best"
+        self.channels = ["ukoethe","arturandrzejak"]
 
     def run(self):
+        print("Started Twitch record")
         # path to recorded stream
         self.recorded_path = os.path.join(self.root_path, "recorded", self.username)
 
@@ -114,8 +115,12 @@ class TwitchRecorder:
             if e.response:
                 if e.response.reason == 'Not Found' or e.response.reason == 'Unprocessable Entity':
                     status = 2
-                else: status = 3
-            else: status = 3
+                else: 
+                    status = 3
+                    print(e)
+            else: 
+                status = 3
+                print(e)
 
         return status, logins
 
