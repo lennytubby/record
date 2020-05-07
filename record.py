@@ -18,6 +18,7 @@ class TwitchRecorder:
     def __init__(self):
         # global configuration
         self.client_id = "cy4qphxbgh6ef74tuvpdzcgk2eat5p" # don't change this
+        self.client_secret = "iwb4sw1xdyjfigtnarqqsr1wu8fs9c"
         # get oauth token value by typing `streamlink --twitch-oauth-authenticate` in terminal
         self.oauth_token ="x7jqesfq2pc3mn3mh4ddrkbxhc9i6z"
         self.ffmpeg_path = 'ffmpeg'
@@ -97,11 +98,18 @@ class TwitchRecorder:
         '''
 
         url2 = 'https://api.twitch.tv/helix/streams?user_login='+ self.channels[0]
+        url_auth = "https://id.twitch.tv/oauth2/token" + \
+                    "?client_id=" + self.client_id +\
+                    "&client_secret=" + self.client_secret +\
+                    "&grant_type=client_credentials"
+                    #&scope=<space-separated list of scopes>"
         for i in range(len(self.channels)-1):
             url2 = url2 + "&user_login=" + self.channels[i+1]
         try:
             logins = []
-            r = requests.get(url2, headers = {"Client-ID" : self.client_id}, timeout = 15)
+            r = requests.post(url_auth, headers = {"Client-ID" : self.client_id}, timeout = 15)
+            otoken = r.json()['access_token']
+            r = requests.get(url2, headers = {"Client-ID" : self.client_id,"Authorization": "Bearer "+ otoken}, timeout = 15)
             r.raise_for_status()
             info = r.json()
             if len(info['data']) == 0:
