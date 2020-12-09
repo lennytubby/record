@@ -6,12 +6,13 @@ while true; do
     while IFS= read -r line; do
         my_array+=( "$line" )
     done < <( ps aux | grep $1 )
+    dt=$(date '+%d/%m/%Y %H:%M:%S')
     if [ ${#my_array[@]} -gt 3 ]; then 
-	    echo true
+	    echo true "$dt"
 	    sleep 5m
     else 
-	    echo false
-	    `./sendMail.sh "Record.py crashed" "!" lennart@slusny.de`
+	    echo false "$dt"
+	    `./sendMail.sh "$1""crashed" "!" lennart@slusny.de`
 	    break
     fi
 done

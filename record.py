@@ -96,7 +96,12 @@ class TwitchRecorder:
 
         return status, info
         '''
-
+        def get_token():
+            r = requests.post(url_auth, headers = {"Client-ID" : self.client_id}, timeout = 15)
+            otoken = r.json()
+            otoken["later"] = time.time()
+            otoken["expires_in"] = otoken["expires_in"] - 100
+            return otoken
         url2 = 'https://api.twitch.tv/helix/streams?user_login='+ self.channels[0]
         url_auth = "https://id.twitch.tv/oauth2/token" + \
                     "?client_id=" + self.client_id +\
@@ -107,9 +112,15 @@ class TwitchRecorder:
             url2 = url2 + "&user_login=" + self.channels[i+1]
         try:
             logins = []
-            r = requests.post(url_auth, headers = {"Client-ID" : self.client_id}, timeout = 15)
-            otoken = r.json()['access_token']
-            r = requests.get(url2, headers = {"Client-ID" : self.client_id,"Authorization": "Bearer "+ otoken}, timeout = 15)
+            now = time.time()
+            if (otoken):
+                later = otoken["later"]
+                difference = int(now - later)
+                if ((otoken["expires_in"] - difference) < 0 ):
+                    otoken = get_token()
+            else:
+                otoken = get_token()
+            r = requests.get(url2, headers = {"Client-ID" : self.client_id,"Authorization": "Bearer "+ otoken['access_token']}, timeout = 15)
             r.raise_for_status()
             info = r.json()
             if len(info['data']) == 0:
@@ -117,7 +128,8 @@ class TwitchRecorder:
             else:
                 status = 0
                 for obj in info['data']:
-                    logins.append(obj["user_name"])
+                    dic = {"user_name":obj["user_name"],"viewer_count":obj["viewer_count"]
+                    logins.append(dic)
                 return status, logins
         except requests.exceptions.RequestException as e:
             if e.response:
@@ -126,10 +138,11 @@ class TwitchRecorder:
                 else: 
                     status = 3
                     print(e)
+                    print("otoken: " + otoken)
             else: 
                 status = 3
                 print(e)
-
+                print("otoken: " + otoken)
         return status, logins
 
     def loopcheck(self):
@@ -138,7 +151,8 @@ class TwitchRecorder:
         while True:
             
             status, logins = self.check_user()
-            diff_channels = set(logins) - processes_channels
+            login_names = set([elem["user_name"] for elem in logins])
+            diff_channels = set(login_names) - processes_channels
             if status == 2:
                 print("Username not found. Invalid username or typo.")
                 time.sleep(self.refresh)
@@ -154,7 +168,10 @@ class TwitchRecorder:
                 print("steaming channels: " + str(diff_channels).strip('{}'))
                 
                 for login in diff_channels:
-                    filename = login + "_" + datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mm%Ss") + ".mp4"
+                # rahter in procewss file and a average over all viewrs in the time
+                    k = next((item for item in logins if item["user_name"] == login),None)
+                # ....
+                    filename = login + "_viewers:" + k["viewer_count"] + "_" + datetime.datetime.now().strftime("%Y-%m-%d_%Hh%Mm%Ss") + ".mp4"
 
                     # clean filename from unecessary characters
                     filename = "".join(x for x in filename if x.isalnum() or x in [" ", "-", "_", "."])
@@ -166,7 +183,7 @@ class TwitchRecorder:
                     ])
                     processes_channels.add(login)
                     print("Recording channel: "+login)
-                    time.sleep(self.refresh)
+                time.sleep(self.refresh)
 
             if processes:
                 i = 0

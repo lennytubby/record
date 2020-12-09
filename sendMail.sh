@@ -3,7 +3,7 @@
 # 1 - Subject
 # 2 - Body
 # 3 - Mail Adress
-`printf "Subject: "$1"\n\n"$2 | ssmtp $3`
+`printf "Subject: ""$1""\n\n""$2" | ssmtp $3`
 # installed ssmto
 # editied /etc/ssmtp/ssmtp.conf to:
 #  FromLineOverride=YES
